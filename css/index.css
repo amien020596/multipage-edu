@@ -112,6 +112,11 @@ nav {
   z-index: 11;
 }
 
+.window-scroll {
+  background: var(--color-primary);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+
 .nav__container {
   height: 100%;
   display: flex;
@@ -143,7 +148,7 @@ header {
   position: relative;
   top: 5rem;
   overflow: hidden;
-  height: 70vh;
+  height: 75vh;
   margin-bottom: 5rem;
 }
 
@@ -162,6 +167,7 @@ header {
 /* CATEGORIES */
 .categories {
   background: var(--color-bg1);
+  height: 35rem;
 }
 
 .category h1 {
@@ -172,7 +178,11 @@ header {
 .categories__container {
   display: grid;
   grid-template-columns: 40% 60%;
-  gap: 4rem;
+  padding-top: 5rem;
+}
+
+.categories__left {
+  margin-right: 4rem;
 }
 
 .categories__left p {
@@ -183,5 +193,53 @@ header {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1.2rem;
-
 }
+
+.category {
+  background: var(--color-bg2);
+  padding: 2rem;
+  border-radius: 2rem;
+  transition: var(--transition);
+}
+
+.category:nth-child(2) .category__icon {
+  background: var(--color-danger);
+}
+
+.category:nth-child(3) .category__icon {
+  background: var(--color-success);
+}
+
+.category:nth-child(4) .category__icon {
+  background: var(--color-danger);
+}
+
+.category:nth-child(5) .category__icon {
+  background: var(--color-success);
+}
+
+.category:nth-child(6) .category__icon {
+
+  background: var(--color-warning);
+}
+
+.category:hover {
+  box-shadow: 0 3rem 3rem rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
+.category__icon {
+  background: var(--color-primary);
+  padding: 0.7rem;
+  border-radius: 0.9rem;
+}
+
+.categories h5 {
+  margin: 2rem 0 1rem;
+}
+
+.category p {
+  font-size: 0.85rem;
+}
+
+/* END CATEGORIES */
