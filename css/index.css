@@ -243,3 +243,41 @@ header {
 }
 
 /* END CATEGORIES */
+
+/* COURSES */
+
+.courses {
+  margin-top: 10rem;
+}
+
+.courses__container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.course {
+  background: var(--color-bg1);
+  text-align: center;
+  border: 1px solid transparent;
+}
+
+.course:hover {
+  background: transparent;
+  border-color: var(--color-primary);
+  transition: var(--transition);
+  box-shadow: rgba(0, 0, 0, 0.2);
+}
+
+.course img {
+  aspect-ratio: 16 / 9;
+}
+
+.course__info {
+  padding: 2rem;
+}
+
+.course__info p {
+  margin: 1.2rem 0 2rem;
+  font-size: 0.9rem;
+}
