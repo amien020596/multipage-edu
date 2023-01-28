@@ -17,3 +17,22 @@ faqs.forEach(faq => {
     }
   })
 });
+
+// show / hide nav menu
+const menu = document.querySelector('.nav__menu')
+const buttonOpen = document.querySelector('#open-menu-btn');
+const buttonClose = document.querySelector('#close-menu-btn');
+
+// open nav
+buttonOpen.addEventListener('click', () => {
+  menu.style.display = 'flex';
+  buttonClose.style.display = 'inline-block';
+  buttonOpen.style.display = 'none';
+})
+
+// close nav
+buttonClose.addEventListener('click', () => {
+  buttonClose.style.display = 'none';
+  menu.style.display = 'none';
+  buttonOpen.style.display = 'inline-block';
+})
