@@ -425,9 +425,7 @@ footer ul li a:hover {
 
 /* MEDIA QUERIES (Tablets) */
 @media screen and (max-width:1024px) {
-  body {
-    background: red;
-  }
+
 
   .container {
     width: var(--container-width-md);
@@ -519,6 +517,62 @@ footer ul li a:hover {
   }
 
   /* HEADER */
+  header {
+    height: 52vh;
+  }
 
+  .header__container {
+    gap: 1rem;
+    padding: 3rem 0rem;
+  }
 
+  /* CATEGORIES */
+  .categories {
+    height: auto;
+  }
+
+  .categories__container {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    padding: 3rem 0rem;
+  }
+
+  .categories__left {
+    margin-right: 0;
+  }
+
+  /* COURSES */
+  .courses {
+    margin-top: 1rem;
+  }
+
+  .courses__container {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  /* FAQs */
+  .faqs {
+    padding: 3rem 0 3rem;
+  }
+
+  .faqs__container {
+    grid-template-columns: 1fr;
+  }
+
+  /* FOOTER */
+
+  .footer__container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* MEDIA QUERIES (Phone) */
+@media screen and (max-width:600px) {
+  body {
+    background: red;
+  }
+
+  .container {
+    width: var(--container-width-sm);
+  }
 }
