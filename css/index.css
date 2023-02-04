@@ -569,10 +569,6 @@ footer ul li a:hover {
 
 /* MEDIA QUERIES (Phone) */
 @media screen and (max-width:600px) {
-  body {
-    background: red;
-  }
-
   .container {
     width: var(--container-width-sm);
   }
